@@ -20,6 +20,7 @@ public class StudentController {
 	@PostMapping("/savestudent")
 	public String saveStudent(@RequestBody Student s)
 	{
+		System.out.println("From SaveStudrnt");
 		sr.save(s);
 		return "Student saved";
 	}
