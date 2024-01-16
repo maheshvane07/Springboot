@@ -45,6 +45,13 @@ public class StudentController {
 		sr.deleteById(id);
 		return "student deleted";
 	}
+
+	@GetMapping("/getdata")
+	public String getdataankush(@RequestParam int id)
+	{
+		sr.deleteById(id);
+		return "student deleted";
+	}
 	
 
 }
